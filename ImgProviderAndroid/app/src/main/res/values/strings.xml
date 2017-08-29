@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Mosquito Collector</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="pick_picture">Pick From Gallery</string>
+    <string name="server_upload_button">Upload to Server</string>
+    <string name="dropbox_upload_button">Upload to Dropbox</string>
+    <string name="retake_button">Retake picture</string>
+    <string name="error_dialog">File upload failed.\n\n
+        You may need to update this app to upload pictures.\n\n
+        Please contact jpablomch@gmail.com"</string>
+    <string name="logo_text">Zika\nImage\nCollector</string>
+    <string name="no_internet">No Internet Connectivity\n\nFile will be uploaded when there is internet</string>
+    <string name="request_label">Select labels for image</string>
+    <string name="no_label">Please select a label to upload</string>
+    <string name="username">Username : </string>
+    <string name="next">Next</string>
+    <string name="current_user">Current User : </string>
+    <string name="change_user">Change User</string>
+    <string name="choose_species">Choose a species</string>
+    <string name="choose_body_part">Choose a part</string>
+    <string name="choose_stage">Choose stage in life</string>
+    <string-array name="species">
+        <item>None</item>
+        <item>Aedes</item>
+        <item>Anopheles</item>
+        <item>Culex</item>
+        <item>Unknown</item>
+    </string-array>
+    <string-array name="body_part">
+        <item>None</item>
+        <item>Head</item>
+        <item>Tail</item>
+        <item>Whole Body</item>
+        <item>Side View</item>
+    </string-array>
+    <string-array name="stage">
+        <item>None</item>
+        <item>Egg</item>
+        <item>Larvae</item>
+        <item>Pupa</item>
+    </string-array>
+</resources>

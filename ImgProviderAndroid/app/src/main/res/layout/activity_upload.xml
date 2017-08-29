@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:background="#E0FFFF">
+
+    <ImageView
+        android:id="@+id/img_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/upload_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="30sp"
+        android:visibility="gone"/>
+    
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/request_label"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-5dp">
+
+        <Button
+            android:id="@+id/aedes_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="aedes"
+            android:layout_marginLeft="75dp"
+            android:background="@android:drawable/btn_default"/>
+
+        <Button
+            android:id="@+id/anopheles_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="13sp"
+            android:text="anopheles"
+            android:background="@android:drawable/btn_default"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-5dp">
+
+        <Button
+            android:id="@+id/culex_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Culex"
+            android:layout_marginLeft="75dp"
+            android:background="@android:drawable/btn_default"/>
+
+        <Button
+            android:id="@+id/unknown_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="14sp"
+            android:text="Unknown"
+            android:background="@android:drawable/btn_default"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="47dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-5dp">
+
+        <Button
+            android:id="@+id/head_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="head"
+            android:layout_marginLeft="75dp"
+            android:background="@android:drawable/btn_default"/>
+
+        <Button
+            android:id="@+id/tail_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="tail"
+            android:background="@android:drawable/btn_default"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-5dp">
+
+        <Button
+            android:id="@+id/whole_body_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="whole body"
+            android:textSize="12sp"
+            android:layout_marginLeft="75dp"
+            android:background="@android:drawable/btn_default"/>
+
+        <Button
+            android:id="@+id/side_view_label"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Side view"
+            android:background="@android:drawable/btn_default"/>
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <Button
+            android:id="@+id/upload_button"
+            android:textColor="#54C0FF"
+            android:background="@drawable/upload_button_shape"
+            android:text="upload"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:shadowColor="#6A857D"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <Button
+            android:id="@+id/retake_button"
+            android:textColor="#FF4500"
+            android:text="@string/retake_button"
+            android:background="@drawable/retake_button_shape"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:shadowColor="#6A857D"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

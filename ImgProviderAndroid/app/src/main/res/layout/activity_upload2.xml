@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/request_label"/>
+
+
+    <Spinner
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/species"
+        android:prompt="@string/choose_species"
+        android:id="@+id/species_spinner"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/body_part"
+        android:prompt="@string/choose_body_part"
+        android:id="@+id/body_spinner"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/stage"
+        android:prompt="@string/choose_stage"
+        android:id="@+id/stage_spinner"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/upload_button"
+            android:textColor="#54C0FF"
+            android:background="@drawable/upload_button_shape"
+            android:text="upload"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:shadowColor="#6A857D"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"/>
+
+        <Button
+            android:id="@+id/retake_button"
+            android:textColor="#FF4500"
+            android:text="@string/retake_button"
+            android:background="@drawable/retake_button_shape"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:shadowColor="#6A857D"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

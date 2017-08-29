@@ -155,7 +155,6 @@ public class Upload2Activity extends AppCompatActivity implements AdapterView.On
             }
             Matrix matrix = new Matrix();
             matrix.setRotate(rotationAngle, (float) workingBmp.getWidth() / 2, (float) workingBmp.getHeight() / 2);
-            // (TODO: ljustin): This was causing a memory error. This is a quickfix. I will add a link to better solutions on Trello.
             matrix.setScale(0.5f, 0.5f);
             return Bitmap.createBitmap(workingBmp, 0, 0, options.outWidth, options.outHeight, matrix, true);
         } catch(IOException ioe){}
